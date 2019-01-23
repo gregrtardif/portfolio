@@ -1,0 +1,155 @@
+*{
+    color: #2d3c49;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0 auto;
+    background-color: #fff;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.hero{
+    padding: 24px 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hero-image{
+    max-width: 100%;
+
+    object-fit: scale-down;
+    }
+.logo{
+    max-height: 150px;
+    padding: 10px;
+
+
+}
+.title-text{
+    text-align: right;
+}
+.box{
+    margin: 0 10px;
+    width: 32%;
+    padding: 10px;
+
+    text-align: center;
+    border-radius: 13px;
+}
+.box:hover{
+    transform: scale(1.13);
+}
+.featured-work{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+}
+.featured{
+    width: 100%;
+    max-height: 120.34px;
+
+}
+hr{
+    width: 100%;
+    border: 2px solid #7d97ad;
+    margin:0;
+}
+h1{
+    text-transform: uppercase;
+    margin: 40px 0 0 0;
+    font-weight: 100;
+    font-size: 3.5em;
+    letter-spacing: 2.3px;
+}
+h2{
+    color:#7d97ad;
+    letter-spacing: .24em;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+h4{
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.feature-text{
+    color: #2d3c49;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: uppercase;
+
+}
+img{
+    border-radius: 13px;
+
+}
+#lowercase{
+    text-transform: lowercase;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #2d3c49;
+    width: 100%;
+    color: #02b3e4;
+    
+}
+i{
+    padding: 0 20px;
+    color: #02b3e4;
+    font-size: 2em;
+}
+i:hover{
+    transform: scale(1.2);
+    color: #02e48d;
+}
+.footer-text{
+    padding: 10px 0;
+    text-align:center;
+    color: #02b3e4;
+}
+@media screen and (max-width:770px){
+    .logo{
+        height: 110px;
+    }
+    h1{
+        font-size: 2.14em;
+        transition: ease-in-out .5s;
+    }
+    .row{
+        justify-content: center;
+        transition: ease-in-out justify-content .5s;
+    }
+    .hero-image{
+        border-radius: 0;
+    }
+}
+@media screen and (max-width: 680px){
+    .featured-work{
+        flex-direction: column;
+    }
+    .box{
+        width: 95%;
+    }
+    .featured{
+        max-height: 50%;
+    }
+    h4{
+        font-size: 1.04em;
+    }
+}
